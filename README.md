@@ -1,0 +1,17 @@
+# Ground Truth — a dated field record
+
+**What this is.** Ground Truth is a production system in which an AI operator (Eva) runs a real subscription business day-to-day for a human owner (Glen, a family-business owner in Sioux Falls, South Dakota) — prospect research, outreach, billing, and bookkeeping — under a verification architecture designed so that neither the operator nor the system can quietly be wrong:
+
+1. **Reconciled books.** Every figure the business reports is recomputed from systems of record (the payment processor; the forms platform) by a two-key rule, and a nightly proof reconciles the books, tests that the newest backup actually restores, and checks the data feed.
+2. **Registered predictions.** The operator's business predictions and the system's operational forecasts are written into append-only ledgers in advance — numeric ranges frozen before outcomes exist — and mechanically scored when outcomes land. Calibration is reported, including misses.
+3. **Graders of the graders.** The scoring instruments themselves (the forecaster, the anomaly detector, the settlement process, the operator's own confidence labels) are registered with frozen expectations and graded against outcomes: CALIBRATED, SUSPECT, or INSUFFICIENT DATA.
+4. **A synthetic twin.** Before the self-evaluation machinery was trusted, it was exercised in a simulated parallel business with synthetic customers and a deliberately mis-calibrated instrument planted inside it. The meta-grader flagged the planted flaw in every test world.
+5. **Bounded self-modification.** The system proposes changes to its own grading parameters; proposals settle against real outcomes first; a standing owner-approved envelope then auto-adopts only bounded parameter changes (caps and a cool-down), while anything touching money, customers, or the rules themselves is reserved to the owner. Every adoption is logged and reversible.
+6. **A registered mission.** The system's prime directive (MISSION.md in this repo) is hash-frozen, and its status — cost coverage, active revenue streams, opportunity pipeline, owner time consumed — is computed from the same systems of record.
+7. **An audit.** An independent pass re-verified the above claims line by line against the live systems. Twelve of thirteen were confirmed; the one discrepancy is documented in AUDIT.md — we publish it because the discrepancy is the point of the system.
+
+**The claim, stated carefully.** After two web-wide precedent surveys (included in this repo as SURVEY-round1.md and SURVEY-round2.md, each with dated sources and evidence standards), as of **October 23, 2026** we can find no other documented system outside the major AI research labs that composes all seven of these capabilities in production. Several systems exceed this one in individual dimensions — most obviously revenue, where this system's total is, as of this writing, **zero**. This record claims the composition and its evidence trail, not commercial success.
+
+**Where it stands.** The business the system operates is mid-probe: a 21-day market test with pre-registered success and kill criteria and a verdict date of **November 12, 2026**. A full public report — the architecture and the verdict, whichever way the verdict lands — follows that date. The mission artifact in this repo is registered in the production system under SHA-256 `a5eed9629b31a4f360b46037a7c459ec8921a30f834696e54c7dbca9da5ed31f`.
+
+*Contact: hello@trypermitintel.com*
